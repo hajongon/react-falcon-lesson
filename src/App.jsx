@@ -16,13 +16,28 @@ const App = () => {
 
     useEffect(() => {
         // 운영 체제 감지
-        const platform = window.navigator.platform.toLowerCase()
-        if (platform.includes('win')) {
-            HTMLClassList.add('windows')
+        const detectOS = async () => {
+            let platform = ''
+            if (navigator.userAgentData) {
+                const platformInfo =
+                    await navigator.userAgentData.getHighEntropyValues([
+                        'platform',
+                    ])
+                platform = platformInfo.platform.toLowerCase()
+            } else {
+                // Fallback for older browsers
+                platform = navigator.userAgent.toLowerCase()
+            }
+
+            if (platform.includes('windows')) {
+                HTMLClassList.add('windows')
+            }
         }
 
+        detectOS()
+
         // 브라우저 감지
-        const userAgent = window.navigator.userAgent.toLowerCase()
+        const userAgent = navigator.userAgent.toLowerCase()
         if (userAgent.includes('chrome') && !userAgent.includes('edge')) {
             HTMLClassList.add('chrome')
         }

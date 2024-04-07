@@ -4,6 +4,9 @@ import App from './App'
 import MainStore from './MainStore'
 import '@/helpers/initFA'
 
+import 'core-js/stable'
+import 'regenerator-runtime/runtime'
+
 import './assets/css/theme.css'
 import './assets/css/user.css'
 

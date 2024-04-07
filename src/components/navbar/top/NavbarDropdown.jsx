@@ -45,22 +45,14 @@ const NavbarDropdown = ({ title, children }) => {
                     <Card.Body
                         className={classNames('scrollbar max-h-dropdown', {
                             'p-0 py-2':
-                                title === 'dashboard' ||
-                                title === 'documentation' ||
-                                title === 'system' ||
-                                title === 'community' ||
-                                title === 'Domain' ||
-                                title === 'Data Management' ||
-                                title === '은행',
+                                title === 'State' ||
+                                title === 'Example' ||
+                                title === 'Note',
                         })}
                     >
-                        {title !== 'dashboard' &&
-                            title !== 'documentation' &&
-                            title !== 'system' &&
-                            title !== 'community' &&
-                            title !== 'Domain' &&
-                            title !== 'Data Management' &&
-                            title !== '은행' && (
+                        {title !== 'State' &&
+                            title !== 'Example' &&
+                            title !== 'Note' && (
                                 <img
                                     src={AuthCornerImage}
                                     alt=""

@@ -19,13 +19,21 @@
     "axios": "^1.6.8",
     "chart.js": "^4.4.2",
     "classnames": "^2.5.1",
+    "core-js": "^3.36.1",
     "dayjs": "^1.11.10",
     "react": "^18.2.0",
+    "react-18-image-lightbox": "^5.1.4",
     "react-bootstrap": "^2.10.2",
+    "react-countup": "^6.5.3",
     "react-datepicker": "^6.6.0",
     "react-dom": "^18.2.0",
+    "react-markdown": "^9.0.1",
     "react-router-dom": "^6.22.3",
-    "react-toastify": "^9.1.1"
+    "react-syntax-highlighter": "^15.5.0",
+    "react-table": "^7.8.0",
+    "react-toastify": "^9.1.1",
+    "regenerator-runtime": "^0.14.1",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
