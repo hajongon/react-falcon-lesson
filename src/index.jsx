@@ -11,8 +11,8 @@ import { faReact, faJsSquare } from '@fortawesome/free-brands-svg-icons'
 import 'core-js/stable'
 import 'regenerator-runtime/runtime'
 
-import './assets/css/theme.css'
-import './assets/css/user.css'
+import '.@/assets/css/theme.css'
+import '.@/assets/css/user.css'
 
 // 아이콘을 라이브러리에 추가
 library.add(faReact)
