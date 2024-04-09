@@ -33,8 +33,3 @@ const AxiosExample = () => {
 
 🙃🙃🙃
 
-## async - await
-
----
-
-sd

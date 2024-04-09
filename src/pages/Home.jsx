@@ -26,6 +26,15 @@ const Home = () => {
                         </a>
                     </Col>
                     <Col xs={4} className="d-flex justify-content-center">
+                        <a href="https://react.dev" target="_blank">
+                            <img
+                                src={reactLogo}
+                                className="logo react"
+                                alt="React logo"
+                            />
+                        </a>
+                    </Col>
+                    <Col xs={4} className="d-flex justify-content-center">
                         <a
                             href="https://themes.getbootstrap.com/preview/?theme_id=33181"
                             target="_blank"
@@ -34,15 +43,6 @@ const Home = () => {
                                 src={falconLogo}
                                 className="logo falcon"
                                 alt="Falcon logo"
-                            />
-                        </a>
-                    </Col>
-                    <Col xs={4} className="d-flex justify-content-center">
-                        <a href="https://react.dev" target="_blank">
-                            <img
-                                src={reactLogo}
-                                className="logo react"
-                                alt="React logo"
                             />
                         </a>
                     </Col>
