@@ -45,12 +45,12 @@ const NavbarDropdown = ({ title, children }) => {
                     <Card.Body
                         className={classNames('scrollbar max-h-dropdown', {
                             'p-0 py-2':
-                                title === 'State' ||
+                                title === 'Project' ||
                                 title === 'Example' ||
                                 title === 'Note',
                         })}
                     >
-                        {title !== 'State' &&
+                        {title !== 'Project' &&
                             title !== 'Example' &&
                             title !== 'Note' && (
                                 <img

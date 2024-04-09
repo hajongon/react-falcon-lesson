@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from 'react'
+import { useReducer, useState } from 'react'
 import AppContext from '@/context/Context'
 import { settings } from '@/config'
 import { getColor, getItemFromStore } from '@/helpers/utils'
@@ -81,7 +81,6 @@ const MainStore = (props) => {
                 config,
                 setConfig,
                 configDispatch,
-
                 exampleState,
                 setExampleState,
             }}

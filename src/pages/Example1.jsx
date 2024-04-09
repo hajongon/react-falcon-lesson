@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Button, Card, Col, Row } from 'react-bootstrap'
+import Flex from '../components/common/Flex'
 import './Example1.css'
 
 const Example1 = () => {
@@ -24,11 +25,11 @@ const Example1 = () => {
     }
 
     return (
-        <Row>
+        <Flex justifyContent="center">
             <Col xs={6}>
                 <Card>
                     <Card.Header className="bg-300 fw-bold">
-                        Count Up Test
+                        State 비동기 처리
                     </Card.Header>
                     <Card.Body>
                         <Row className="mb-3">
@@ -127,13 +128,7 @@ const Example1 = () => {
                     </Card.Body>
                 </Card>
             </Col>
-            <Col xs={6}>
-                <Card>
-                    <Card.Header className="bg-300">1</Card.Header>
-                    <Card.Body>2</Card.Body>
-                </Card>
-            </Col>
-        </Row>
+        </Flex>
     )
 }
 

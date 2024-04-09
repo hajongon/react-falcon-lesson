@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import NavbarDropdown from './NavbarDropdown'
-import { stateRoutes, exampleRoutes, noteRoutes } from '@/routes/siteMaps'
+import { projectRoutes, exampleRoutes, noteRoutes } from '@/routes/siteMaps'
 import { Dropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { flatRoutes } from '@/helpers/utils'
@@ -40,8 +40,8 @@ const NavbarTopDropDownMenus = () => {
                     </Dropdown.Item>
                 ))}
             </NavbarDropdown>
-            <NavbarDropdown title="State">
-                {flatRoutes(stateRoutes.children).map((route) => (
+            <NavbarDropdown title="Project">
+                {flatRoutes(projectRoutes.children).map((route) => (
                     <Dropdown.Item
                         key={route.name}
                         as={Link}

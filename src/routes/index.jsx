@@ -9,7 +9,13 @@ import Home from '@/pages/Home'
 import BasicTable from '@/pages/BasicTable'
 import AdvancedTable from '@/pages/AdvancedTable'
 import Example1 from '@/pages/Example1'
-import LectureNote from '@/pages/LectureNote'
+
+import VanillaJsVsReact from '@/pages/VanillaJsVsReact'
+import ExUseEffect from '@/pages/ExUseEffect'
+import AxiosExample from '@/pages/AxiosExample'
+import ProjectStructure from '@/pages/ProjectStructure'
+import ClassVsFunction from '@/pages/ClassVsFunction'
+import RowAndCol from '@/pages/RowAndCol'
 
 const FalconRoutes = () => {
     return (
@@ -33,13 +39,21 @@ const FalconRoutes = () => {
             </Route>
 
             {/* //--- state menu start  */}
-            <Route element={<MainLayout />}>
-                <Route path="/state/example-1" element={<Example1 />} />
-            </Route>
+            <Route element={<MainLayout />}></Route>
 
             {/* //--- lecture note menu start  */}
             <Route element={<MainLayout />}>
-                <Route path="/note/1" element={<LectureNote />} />
+                <Route path="/note/1" element={<VanillaJsVsReact />} />
+                <Route path="/note/2" element={<ExUseEffect />} />
+                <Route path="/note/3" element={<AxiosExample />} />
+                <Route path="/note/4" element={<Example1 />} />
+                <Route path="/note/5" element={<ClassVsFunction />} />
+            </Route>
+
+            {/* //--- falcon menu start  */}
+            <Route element={<MainLayout />}>
+                <Route path="/falcon/1" element={<ProjectStructure />} />
+                <Route path="/falcon/2" element={<RowAndCol />} />
             </Route>
 
             {/* //--- MainLayout end  */}

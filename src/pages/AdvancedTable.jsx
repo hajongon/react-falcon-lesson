@@ -1,5 +1,4 @@
-import { Card, Col, Row, Table } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Card, Col, Row } from 'react-bootstrap'
 import AdvanceTableFooter from '../components/common/advance-table/AdvanceTableFooter'
 import AdvanceTableSearchBox from '../components/common/advance-table/AdvanceTableSearchBox'
 import AdvanceTableWrapper from '../components/common/advance-table/AdvanceTableWrapper'
