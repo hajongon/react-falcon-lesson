@@ -57,7 +57,7 @@ const App = () => {
     }, [navbarPosition])
 
     return (
-        <Router basename={'/'}>
+        <Router basename={'/vite-falcon-boilerplate'}>
             <FalconRoutes />
             <ToastContainer
                 closeButton={CloseButton}
