@@ -57,7 +57,7 @@ const App = () => {
     }, [navbarPosition])
 
     return (
-        <Router basename={'/react-falcon-lesson'}>
+        <Router basename="/react-falcon-lesson">
             <FalconRoutes />
             <ToastContainer
                 closeButton={CloseButton}
