@@ -45,7 +45,42 @@ export const treeviewItems = [
                     {
                         name: 'navbar',
                         id: '8',
-                        children: [],
+                        children: [
+                            {
+                                name: 'NavbarDropdownTopMenus.jsx',
+                                icon: ['fab', 'react'],
+                                iconClass: 'text-info',
+                                id: 32,
+                                code: `const NavbarTopDropDownMenus = () => {
+    return (
+        <>
+            <NavbarDropdown title="Note">
+                {flatRoutes(noteRoutes.children).map((route) => (
+                    <Dropdown.Item
+                        as={Link}
+                        to={route.to}
+                        onClick={handleDropdownItemClick}
+                    >
+                        {route.name}
+                    </Dropdown.Item>
+                ))}
+            </NavbarDropdown>
+            <NavbarDropdown title="Project">
+                {flatRoutes(projectRoutes.children).map((route) => (
+                    <Dropdown.Item
+                        as={Link}
+                        to={route.to}
+                        onClick={handleDropdownItemClick}
+                    >
+                        {route.name}
+                    </Dropdown.Item>
+                ))}
+            </NavbarDropdown>
+        </>
+    )
+}`,
+                            },
+                        ],
                     },
                 ],
             },
@@ -183,7 +218,8 @@ export default MainLayout`,
                 <Route path="/note/1" element={<바닐라vs리액트 />} />
                 <Route path="/note/2" element={<유즈이펙트 />} />
                 <Route path="/note/3" element={<액시오스 />} />
-                <Route path="/note/4" element={<비동기처리 />} />
+                <Route path="/note/4" element={<state변경 />} />
+                <Route path="/note/5" element={<클래스형vs함수형 />} />
             </Route>
             <Route path="*" element={<Navigate to="/errors/404" replace />} />
         </Routes>
@@ -215,7 +251,7 @@ export default FalconRoutes`,
             active: true,
         },
         {
-            name: 'state 비동기 처리',
+            name: 'state 변경',
             to: '/note/4',
             active: true,
         },

@@ -23,7 +23,7 @@ const AxiosExample = () => {
 
     return (
         <Flex justifyContent="center" className="p-4">
-            <Col xs={8}>
+            <Col xs={6}>
                 <Card>
                     <Card.Body>
                         <Row>

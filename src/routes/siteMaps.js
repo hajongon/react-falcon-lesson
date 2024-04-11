@@ -20,7 +20,7 @@ export const noteRoutes = {
             active: true,
         },
         {
-            name: 'state 비동기 처리',
+            name: 'state 변경',
             icon: 'rocket',
             to: '/note/4',
             active: true,
@@ -49,23 +49,29 @@ export const projectRoutes = {
             to: '/falcon/2',
             active: true,
         },
+        {
+            name: '추상화',
+            icon: 'rocket',
+            to: '/falcon/3',
+            active: true,
+        },
     ],
 }
 
-export const exampleRoutes = {
-    label: 'table',
-    children: [
-        {
-            name: 'basic-table',
-            icon: 'rocket',
-            to: '/table/basic-table',
-            active: true,
-        },
-        {
-            name: 'advance-table',
-            icon: 'rocket',
-            to: '/table/advance-table',
-            active: true,
-        },
-    ],
-}
+// export const exampleRoutes = {
+//     label: 'table',
+//     children: [
+//         {
+//             name: 'basic-table',
+//             icon: 'rocket',
+//             to: '/table/basic-table',
+//             active: true,
+//         },
+//         {
+//             name: 'advance-table',
+//             icon: 'rocket',
+//             to: '/table/advance-table',
+//             active: true,
+//         },
+//     ],
+// }

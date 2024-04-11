@@ -22,7 +22,7 @@ function ExUseEffect() {
 
     return (
         <Flex justifyContent="center" className="p-4">
-            <Col xs={8}>
+            <Col xs={6}>
                 <Card>
                     {/* <Card.Header>1</Card.Header> */}
                     <Card.Body>

@@ -22,7 +22,7 @@ const RowAndCol = () => {
     }, [])
     return (
         <Flex justifyContent="center" className="pt-3 pb-4">
-            <Col xs={8}>
+            <Col xs={6}>
                 <Card>
                     <Card.Header>
                         <h2>Row, Col</h2>

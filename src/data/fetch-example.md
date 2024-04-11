@@ -1,4 +1,5 @@
 ```jsx
+// *** API 는 apis 폴더에 모아두고 관리하는 것이 좋습니다.
 // async, await 사용
 // 비동기 작업을 동기적으로 처리하기 위함
 export const getExampleData = async () => {
@@ -11,7 +12,7 @@ export const getExampleData = async () => {
 ```jsx
 const AxiosExample = () => {
     const [fetchedData, setFetchedData] = useState({})
-    const [markdownContent, setMarkdownContent] = useState('')
+    const [jsonContent, setJsonContent] = useState('')
 
     const fetchData = async () => {
         // res에 return 값 할당
@@ -24,10 +25,11 @@ const AxiosExample = () => {
     // fetchedData 라는 상태에 변화가 생길 경우
     // 사이드이펙트가 실행됩니다.
     useEffect(() => {
-        if (data.id) setMarkdownContent(JSON.stringify(fetchedData))
+        if (data.id) setJsonContent(JSON.stringify(fetchedData))
     }, [fetchedData])
 
-    return <div>{fetchedData}</div>
+    // 화면에 보이는 회색 박스
+    return <div>{ jsonContent }</div>
 }
 ```
 

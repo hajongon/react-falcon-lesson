@@ -16,6 +16,7 @@ import AxiosExample from '@/pages/AxiosExample'
 import ProjectStructure from '@/pages/ProjectStructure'
 import ClassVsFunction from '@/pages/ClassVsFunction'
 import RowAndCol from '@/pages/RowAndCol'
+import Abstraction from '@/pages/Abstraction'
 
 const FalconRoutes = () => {
     return (
@@ -54,6 +55,7 @@ const FalconRoutes = () => {
             <Route element={<MainLayout />}>
                 <Route path="/falcon/1" element={<ProjectStructure />} />
                 <Route path="/falcon/2" element={<RowAndCol />} />
+                <Route path="/falcon/3" element={<Abstraction />} />
             </Route>
 
             {/* //--- MainLayout end  */}

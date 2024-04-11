@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import NavbarDropdown from './NavbarDropdown'
-import { projectRoutes, exampleRoutes, noteRoutes } from '@/routes/siteMaps'
+import { projectRoutes, noteRoutes } from '@/routes/siteMaps'
 import { Dropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { flatRoutes } from '@/helpers/utils'
@@ -53,7 +53,7 @@ const NavbarTopDropDownMenus = () => {
                     </Dropdown.Item>
                 ))}
             </NavbarDropdown>
-            <NavbarDropdown title="Example">
+            {/* <NavbarDropdown title="Example">
                 {flatRoutes(exampleRoutes.children).map((route) => (
                     <Dropdown.Item
                         key={route.name}
@@ -65,7 +65,7 @@ const NavbarTopDropDownMenus = () => {
                         {route.name}
                     </Dropdown.Item>
                 ))}
-            </NavbarDropdown>
+            </NavbarDropdown> */}
         </>
     )
 }
